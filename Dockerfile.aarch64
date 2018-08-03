@@ -32,6 +32,7 @@ RUN \
     tar xf mongodb-linux-arm64-ubuntu1604-3.4.7.tgz && \
     mv mongodb-linux-aarch64-ubuntu1604-3.4.7/bin/mongod /usr/local/bin && \
     mv mongodb-linux-aarch64-ubuntu1604-3.4.7/bin/mongo /usr/local/bin && \
+    mv mongodb-linux-aarch64-ubuntu1604-3.4.7/bin/mongoimport /usr/local/bin && \
     rm -rf mongo mongodb-linux-arm64-ubuntu1604-3.4.7.tgz mongodb-linux-aarch64-ubuntu1604-3.4.7 && \
 	mkdir /data && mkdir /data/db && \
 	chown mongodb:mongodb /data/db
